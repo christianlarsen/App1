@@ -32,11 +32,8 @@ public class MainActivity extends Activity {
 	
 	// Local Bluetooth adapter
     private BluetoothAdapter mBluetoothAdapter = null;
-    // Constantes
-
     private static final int REQUEST_CONNECT_DEVICE = 1;
     private static final int REQUEST_ENABLE_BT = 2;
- // Message types sent from the BluetoothChatService Handler
     public static final int MESSAGE_STATE_CHANGE = 1;
     public static final int MESSAGE_READ = 2;
     public static final int MESSAGE_WRITE = 3;
@@ -128,8 +125,9 @@ public class MainActivity extends Activity {
         mSendButton.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 // Send a message using content of the edit text widget
-                TextView view = (TextView) findViewById(R.id.edit_text_out);
-                String message = view.getText().toString();
+                //TextView view = (TextView) findViewById(R.id.edit_text_out);
+                //String message = view.getText().toString();
+
                 mApp1.sendData("1");
                 //sendMessage(message);
             }
