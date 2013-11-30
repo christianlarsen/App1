@@ -130,7 +130,8 @@ public class MainActivity extends Activity {
                 // Send a message using content of the edit text widget
                 TextView view = (TextView) findViewById(R.id.edit_text_out);
                 String message = view.getText().toString();
-                sendMessage(message);
+                mApp1.sendData("1");
+                //sendMessage(message);
             }
         });
 
@@ -144,7 +145,7 @@ public class MainActivity extends Activity {
 	private void ensureDiscoverable() {
         
 
-        if (mBluetoothAdapter.getScanMode() != 
+        if (mBluetoothAdapter.getScanMode() !=
             BluetoothAdapter.SCAN_MODE_CONNECTABLE_DISCOVERABLE) {
             Intent discoverableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_DISCOVERABLE);
             discoverableIntent.putExtra(BluetoothAdapter.EXTRA_DISCOVERABLE_DURATION, 300);

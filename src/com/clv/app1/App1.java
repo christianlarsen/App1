@@ -37,6 +37,7 @@ public class App1 {
     private ConnectThread mConnectThread;
     private ConnectedThread mConnectedThread;
     private int mState;
+    public OutputStream outStream = null;
 
     // Constants that indicate the current connection state
     public static final int STATE_NONE = 0;       // we're doing nothing
@@ -140,10 +141,20 @@ public class App1 {
         Bundle bundle = new Bundle();
         bundle.putString(MainActivity.DEVICE_NAME, device.getName());
         msg.setData(bundle);
-        mHandler.Message(msg);
+        mHandler.sendMessage(msg);
 
         setState(STATE_CONNECTED);
     }
+    
+    public void sendData(String message) {
+        byte[] msgBuffer = message.getBytes();
+     
+        try {
+          outStream.write(msgBuffer);
+        } catch (IOException e) {
+          
+        }
+      }
 
     /**
      * Stop all threads
