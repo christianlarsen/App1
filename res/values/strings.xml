@@ -37,4 +37,6 @@
     <!-- Options Menu -->
     <string name="connect">Conectar</string>
     <string name="discoverable">Hacer visible</string>
+    <string name="send_1">Encender</string>
+    <string name="send_0">Apagar</string>
 </resources>

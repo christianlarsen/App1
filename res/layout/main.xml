@@ -26,21 +26,24 @@
         android:transcriptMode="alwaysScroll"
         android:layout_weight="1"
     />
+
     <LinearLayout
-        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        >
-        <EditText android:id="@+id/edit_text_out"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_send1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="bottom"
-        />
-        <Button android:id="@+id/button_send"
+            android:text="@string/send_1" />
+
+        <Button
+            android:id="@+id/button_send0"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/send"
-        />
+            android:text="@string/send_0" />
+
     </LinearLayout>
+
 </LinearLayout>

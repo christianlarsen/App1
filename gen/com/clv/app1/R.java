@@ -15,9 +15,9 @@ public final class R {
     }
     public static final class id {
         public static final int button_scan=0x7f060006;
-        public static final int button_send=0x7f060009;
+        public static final int button_send0=0x7f060009;
+        public static final int button_send1=0x7f060008;
         public static final int discoverable=0x7f06000b;
-        public static final int edit_text_out=0x7f060008;
         public static final int in=0x7f060007;
         public static final int new_devices=0x7f060005;
         public static final int paired_devices=0x7f060003;
@@ -55,6 +55,8 @@ public final class R {
         /**   BluetoothChat 
          */
         public static final int send=0x7f040001;
+        public static final int send_0=0x7f040011;
+        public static final int send_1=0x7f040010;
         public static final int title_connected_to=0x7f040005;
         public static final int title_connecting=0x7f040004;
         public static final int title_not_connected=0x7f040006;
